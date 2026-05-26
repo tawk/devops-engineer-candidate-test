@@ -40,7 +40,7 @@ kubectl config use-context kind-devops-test
 
 # Build the image (after you fix the Dockerfile), then load it into kind:
 docker build -t api-service:sandbox ./app
-kind load docker-image api-service:sandbox
+kind load docker-image api-service:sandbox --name devops-test
 
 # Render + deploy the workload (the chart lives above the overlay, so allow that):
 kubectl kustomize --enable-helm --load-restrictor LoadRestrictionsNone \
