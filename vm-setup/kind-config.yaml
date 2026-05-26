@@ -1,0 +1,9 @@
+# Multi-node kind cluster: 1 control-plane + 2 workers.
+# Multiple workers are required so that anti-affinity / topology-spread / multi-replica
+# fixes can actually schedule (a correct HA fix must not leave pods Pending).
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+  - role: worker
+  - role: worker

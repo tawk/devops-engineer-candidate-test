@@ -1,0 +1,12 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS
+.DS_Store

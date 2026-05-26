@@ -1,0 +1,7 @@
+name 'mongodb'
+maintainer 'Platform'
+maintainer_email 'platform@example.com'
+license 'All Rights Reserved'
+description 'Installs and configures MongoDB (synthetic, for the DevOps test)'
+version '0.1.0'
+chef_version '>= 14.0'

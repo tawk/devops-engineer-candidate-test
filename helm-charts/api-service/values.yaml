@@ -1,0 +1,27 @@
+replicaCount: 1
+
+image:
+  repository: api-service
+  tag: latest
+  pullPolicy: Always
+
+service:
+  port: 80
+  targetPort: 3000
+
+# MongoDB connection settings. The password is here so the chart is
+# "self-contained" and easy to deploy.
+mongo:
+  db: api_service
+  # Single host, no replicaSet parameter.
+  uri: "mongodb://api_user:sup3rs3cr3t-changeme@mongodb-0.mongodb.svc.cluster.local:27017/api_service?authSource=admin"
+  password: "sup3rs3cr3t-changeme"
+
+resources: {}
+
+# Pod disruption budget for the workload.
+pdb:
+  enabled: false
+  minAvailable: 1
+
+nodeSelector: {}

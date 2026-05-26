@@ -1,0 +1,17 @@
+storage:
+  dbPath: <%= node['mongodb']['data_dir'] %>
+
+net:
+  port: <%= node['mongodb']['port'] %>
+  bindIp: 0.0.0.0
+
+security:
+  authorization: disabled
+
+replication:
+  replSetName: rs0
+
+# Bootstrap admin credentials.
+setParameter:
+  adminUser: <%= node['mongodb']['admin_user'] %>
+  adminPassword: <%= node['mongodb']['admin_password'] %>
