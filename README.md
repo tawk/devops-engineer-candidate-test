@@ -26,7 +26,7 @@ never ship to production, and some are subtle. Your job:
 
 ## Your sandbox (already set up on the VM)
 
-- `docker`, `kubectl`, `helm`, `kustomize`, `terraform` are installed.
+- `docker`, `kind`, `kubectl`, `helm`, `kustomize`, `terraform` are installed.
 - A multi-node `kind` cluster is running.
 - MongoDB (a single-member replica set `rs0`) is running in the `data` namespace.
 - An `apps` namespace exists for the workload.
