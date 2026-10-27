@@ -115,6 +115,9 @@ Fix in the files and record your findings in [`FINDINGS.md`](./FINDINGS.md).
 
 ## Submission
 
-1. Submit the link to your **cloned** repo by replying to the email you received this test link from.
+1. Keep your clone **private**. Do not make it public.
+2. Add the GitHub user `pyhrus` as a collaborator
+   (repo **Settings → Collaborators → Add people**).
+3. Reply to the email you received this test link from, with the link to your repo.
 
 Good luck.
